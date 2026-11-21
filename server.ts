@@ -1,6 +1,7 @@
 import express from 'express';
 import http from 'http';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import crypto from 'crypto';
 import { WebSocketServer, WebSocket } from 'ws';
@@ -25,7 +26,25 @@ interface RadarDatabase {
 }
 
 const PORT = Number(process.env.PORT || 3000);
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+
+function resolveWritableDataDir(): string {
+  const localDir = path.resolve(process.cwd(), 'data');
+  try {
+    if (!fs.existsSync(localDir)) {
+      fs.mkdirSync(localDir, { recursive: true });
+    }
+    fs.accessSync(localDir, fs.constants.W_OK);
+    return localDir;
+  } catch {
+    const tmpDir = path.join(os.tmpdir(), 'internradar-data');
+    if (!fs.existsSync(tmpDir)) {
+      fs.mkdirSync(tmpDir, { recursive: true });
+    }
+    return tmpDir;
+  }
+}
+
+const DATA_DIR = resolveWritableDataDir();
 const DB_PATH = path.join(DATA_DIR, 'radar-db.json');
 
 const ALLOWED_PATTERNS = new Set<ScamPattern>([
@@ -937,12 +956,15 @@ async function startServer() {
     res.json(employer);
   });
 
-  // Serve Vite in dev, or built dist/ in production
-  if (process.env.NODE_ENV === 'production') {
-    const distPath = path.resolve(process.cwd(), 'dist');
+  // Serve built dist/ in production/deployed mode; use Vite dev middleware only when INTERNRADAR_DEV=1 or dist/ is absent
+  const distPath = path.resolve(process.cwd(), 'dist');
+  const distIndexPath = path.join(distPath, 'index.html');
+  const isDevServer = process.env.INTERNRADAR_DEV === '1';
+
+  if (!isDevServer && fs.existsSync(distIndexPath)) {
     app.use(express.static(distPath));
-    app.get('/{*path}', (_req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
+    app.get('*', (_req, res) => {
+      res.sendFile(distIndexPath);
     });
   } else {
     const { createServer: createViteServer } = await import('vite');

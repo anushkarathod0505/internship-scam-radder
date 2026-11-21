@@ -92,9 +92,14 @@ export default function App() {
 
     function connect() {
       if (isDisposed) return;
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const wsUrl = `${protocol}//${window.location.host}/api/ws`;
-      ws = new WebSocket(wsUrl);
+      try {
+        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const wsUrl = `${protocol}//${window.location.host}/api/ws`;
+        ws = new WebSocket(wsUrl);
+      } catch {
+        setWsStatus('reconnecting');
+        return;
+      }
 
       ws.onopen = () => {
         setWsStatus('connected');

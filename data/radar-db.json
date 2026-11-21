@@ -1,0 +1,535 @@
+{
+  "reports": [
+    {
+      "id": "rep-101",
+      "companyName": "Stripe Talent Portal (Spoof)",
+      "roleTitle": "Remote Software Engineering Intern",
+      "platform": "Cold Email",
+      "suspiciousDomainOrContact": "hr@stripe-onboarding.co",
+      "postingSnippet": "Received a PDF offer letter asking me to deposit an e-check of $2,450 and wire funds to their \"certified MacBook vendor\" before day one.",
+      "pattern": "equipment_check",
+      "severity": "critical",
+      "status": "confirmed",
+      "redFlags": [
+        "Lookalike domain stripe-onboarding.co (official: stripe.com)",
+        "Fake e-check reimbursement for home-office equipment",
+        "No live technical interview conducted"
+      ],
+      "matchedTrustedEmployerId": "emp-stripe",
+      "matchedTrustedEmployerName": "Stripe",
+      "reporterLabel": "Maya T.",
+      "university": "UC Berkeley",
+      "flagCount": 19,
+      "flaggedBy": [
+        "seed-u1",
+        "seed-u2",
+        "seed-u3"
+      ],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [
+        {
+          "id": "note-1",
+          "author": "Devon R.",
+          "university": "UCLA",
+          "text": "Got the exact same PDF from stripe-onboarding.co after applying to a fake LinkedIn repost. Reported domain to registrar.",
+          "stance": "corroborate",
+          "createdAt": "2026-11-21T06:52:58.528Z"
+        },
+        {
+          "id": "note-2",
+          "author": "Hannah K.",
+          "university": "UT Austin",
+          "text": "Confirmed with an actual Stripe campus recruiter on Handshake that stripe-onboarding.co is fraudulent.",
+          "stance": "corroborate",
+          "createdAt": "2026-11-21T07:16:58.528Z"
+        }
+      ],
+      "createdAt": "2026-11-21T05:34:58.528Z",
+      "updatedAt": "2026-11-21T07:16:58.528Z"
+    },
+    {
+      "id": "rep-102",
+      "companyName": "Figma Campus Recruiting (Spoof)",
+      "roleTitle": "Product Design Intern — Summer",
+      "platform": "LinkedIn",
+      "suspiciousDomainOrContact": "recruiting@figma-careers.org",
+      "postingSnippet": "Recruiter asked me to download Telegram and message \"@figma_talent_desk\" for a 20-minute text-only screening interview.",
+      "pattern": "fake_interview",
+      "severity": "high",
+      "status": "confirmed",
+      "redFlags": [
+        "Lookalike domain figma-careers.org (official: figma.com)",
+        "Off-platform text-only Telegram interview",
+        "Requested immediate SSN verification after 5 chat questions"
+      ],
+      "matchedTrustedEmployerId": "emp-figma",
+      "matchedTrustedEmployerName": "Figma",
+      "reporterLabel": "Jordan L.",
+      "university": "RISD",
+      "flagCount": 14,
+      "flaggedBy": [
+        "seed-u1",
+        "seed-u2"
+      ],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [
+        {
+          "id": "note-3",
+          "author": "Priya S.",
+          "university": "University of Washington",
+          "text": "Same Telegram handle reached out to three design majors in our Slack channel this morning.",
+          "stance": "corroborate",
+          "createdAt": "2026-11-21T06:39:58.528Z"
+        }
+      ],
+      "createdAt": "2026-11-21T03:34:58.528Z",
+      "updatedAt": "2026-11-21T06:39:58.528Z"
+    },
+    {
+      "id": "rep-103",
+      "companyName": "NVIDIA AI Lab (Spoof)",
+      "roleTitle": "ML Systems Intern (Remote)",
+      "platform": "Indeed",
+      "suspiciousDomainOrContact": "talent@nvidia-talent.us",
+      "postingSnippet": "Listed $68/hr remote ML intern role on Indeed redirecting to nvidia-talent.us asking for driver license scan and bank routing number upfront.",
+      "pattern": "domain_spoof",
+      "severity": "critical",
+      "status": "confirmed",
+      "redFlags": [
+        "Lookalike domain nvidia-talent.us (official: nvidia.com)",
+        "Premature driver license & bank routing harvest",
+        "Bypasses official Workday portal"
+      ],
+      "matchedTrustedEmployerId": "emp-nvidia",
+      "matchedTrustedEmployerName": "NVIDIA",
+      "reporterLabel": "Arjun V.",
+      "university": "Georgia Tech",
+      "flagCount": 11,
+      "flaggedBy": [
+        "seed-u1"
+      ],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [],
+      "createdAt": "2026-11-21T00:34:58.528Z",
+      "updatedAt": "2026-11-21T02:34:58.528Z"
+    },
+    {
+      "id": "rep-104",
+      "companyName": "Apex Horizon Logistics",
+      "roleTitle": "Remote Data Entry & Payroll Intern",
+      "platform": "University Board",
+      "suspiciousDomainOrContact": "apex.horizon.hiring@gmail.com",
+      "postingSnippet": "Claims $45/hr flexible remote internship with no experience required. Asked to purchase $380 software license via Zelle to be reimbursed on first check.",
+      "pattern": "upfront_fee",
+      "severity": "critical",
+      "status": "confirmed",
+      "redFlags": [
+        "Uses free @gmail.com recruiter address",
+        "Upfront Zelle payment for onboarding software",
+        "Unrealistic $45/hr pay for entry-level data entry"
+      ],
+      "matchedTrustedEmployerId": null,
+      "matchedTrustedEmployerName": null,
+      "reporterLabel": "Elena M.",
+      "university": "Ohio State University",
+      "flagCount": 9,
+      "flaggedBy": [
+        "seed-u1"
+      ],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [
+        {
+          "id": "note-4",
+          "author": "Career Services Desk",
+          "university": "Ohio State",
+          "text": "Listing removed from campus job portal; sender account suspended.",
+          "stance": "corroborate",
+          "createdAt": "2026-11-21T01:34:58.528Z"
+        }
+      ],
+      "createdAt": "2026-11-20T20:34:58.528Z",
+      "updatedAt": "2026-11-21T01:34:58.528Z"
+    },
+    {
+      "id": "rep-105",
+      "companyName": "Datadog Cloud Ops (Spoof)",
+      "roleTitle": "Site Reliability Intern",
+      "platform": "Cold Email",
+      "suspiciousDomainOrContact": "onboarding@datadog-hr.info",
+      "postingSnippet": "Sent unsolicited email to .edu address asking for a $65 \"refundable identity screening fee\" through a third-party crypto payment gateway.",
+      "pattern": "upfront_fee",
+      "severity": "critical",
+      "status": "flagged",
+      "redFlags": [
+        "Lookalike domain datadog-hr.info (official: datadoghq.com)",
+        "Requests $65 screening fee via crypto"
+      ],
+      "matchedTrustedEmployerId": "emp-datadog",
+      "matchedTrustedEmployerName": "Datadog",
+      "reporterLabel": "Samir P.",
+      "university": "NYU",
+      "flagCount": 4,
+      "flaggedBy": [],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [],
+      "createdAt": "2026-11-20T17:34:58.528Z",
+      "updatedAt": "2026-11-20T17:34:58.528Z"
+    },
+    {
+      "id": "rep-106",
+      "companyName": "Linear App Labs (Spoof)",
+      "roleTitle": "Frontend Engineering Intern",
+      "platform": "Discord / Slack",
+      "suspiciousDomainOrContact": "careers@linear-jobs.net",
+      "postingSnippet": "DM in a student hackathon Discord server linking to linear-jobs.net which asks candidates to run a suspicious local \"take-home CLI package\" with obfuscated install script.",
+      "pattern": "data_harvest",
+      "severity": "high",
+      "status": "confirmed",
+      "redFlags": [
+        "Lookalike domain linear-jobs.net (official: linear.app)",
+        "Unsolicited Discord DM with suspicious executable take-home repo"
+      ],
+      "matchedTrustedEmployerId": "emp-linear",
+      "matchedTrustedEmployerName": "Linear",
+      "reporterLabel": "Chloe W.",
+      "university": "University of Waterloo",
+      "flagCount": 8,
+      "flaggedBy": [
+        "seed-u1"
+      ],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [],
+      "createdAt": "2026-11-20T12:34:58.528Z",
+      "updatedAt": "2026-11-20T15:34:58.528Z"
+    },
+    {
+      "id": "rep-107",
+      "companyName": "Vanguard Quantum Media",
+      "roleTitle": "Social Media & Brand Marketing Intern",
+      "platform": "Handshake",
+      "suspiciousDomainOrContact": "talent@vanguardquantum-media.com",
+      "postingSnippet": "2-hour deadline to sign NDA and send passport scan + W-4 tax form before speaking with any hiring manager.",
+      "pattern": "data_harvest",
+      "severity": "high",
+      "status": "flagged",
+      "redFlags": [
+        "2-hour artificial urgency deadline",
+        "Requests W-4 and passport photo pre-interview"
+      ],
+      "matchedTrustedEmployerId": null,
+      "matchedTrustedEmployerName": null,
+      "reporterLabel": "Liam G.",
+      "university": "Boston University",
+      "flagCount": 3,
+      "flaggedBy": [],
+      "safeVotes": 0,
+      "safeVotedBy": [],
+      "notes": [],
+      "createdAt": "2026-11-20T07:34:58.528Z",
+      "updatedAt": "2026-11-20T07:34:58.528Z"
+    },
+    {
+      "id": "rep-108",
+      "companyName": "Duolingo Thrive Recruiting",
+      "roleTitle": "Thrive Software Engineering Intern",
+      "platform": "University Board",
+      "suspiciousDomainOrContact": "thrive-recruiting@duolingo.com",
+      "postingSnippet": "Flagged initially for a fast turnaround invite, later verified directly against @duolingo.com SPF records and Greenhouse portal.",
+      "pattern": "domain_spoof",
+      "severity": "medium",
+      "status": "verified_safe",
+      "redFlags": [
+        "Verified official @duolingo.com sender"
+      ],
+      "matchedTrustedEmployerId": "emp-duolingo",
+      "matchedTrustedEmployerName": "Duolingo",
+      "reporterLabel": "Noah C.",
+      "university": "Carnegie Mellon University",
+      "flagCount": 1,
+      "flaggedBy": [],
+      "safeVotes": 7,
+      "safeVotedBy": [
+        "seed-u1",
+        "seed-u2"
+      ],
+      "notes": [
+        {
+          "id": "note-5",
+          "author": "CMU Career Office",
+          "university": "Carnegie Mellon University",
+          "text": "Confirmed legitimate outreach from Duolingo’s official @duolingo.com university recruiting alias.",
+          "stance": "dispute_safe",
+          "createdAt": "2026-11-20T07:34:58.528Z"
+        }
+      ],
+      "createdAt": "2026-11-19T07:34:58.528Z",
+      "updatedAt": "2026-11-20T07:34:58.528Z"
+    }
+  ],
+  "employers": [
+    {
+      "id": "emp-stripe",
+      "name": "Stripe",
+      "industry": "Financial Infrastructure",
+      "headquarters": "South San Francisco, CA & Dublin",
+      "officialDomains": [
+        "stripe.com"
+      ],
+      "atsPortals": [
+        "boards.greenhouse.io/stripe",
+        "stripe.com/jobs"
+      ],
+      "hiringPolicyNote": "All university interviews occur via scheduled video calls from @stripe.com. Laptops are shipped directly from Stripe IT.",
+      "tier": "campus_confirmed",
+      "vouchCount": 142,
+      "vouchedBy": [
+        "seed-1",
+        "seed-2",
+        "seed-3"
+      ],
+      "nominatedBy": "UC Berkeley Career Center",
+      "createdAt": "2026-10-07T07:34:58.528Z"
+    },
+    {
+      "id": "emp-figma",
+      "name": "Figma",
+      "industry": "Design & Collaboration Software",
+      "headquarters": "San Francisco, CA",
+      "officialDomains": [
+        "figma.com"
+      ],
+      "atsPortals": [
+        "boards.greenhouse.io/figma",
+        "figma.com/careers"
+      ],
+      "hiringPolicyNote": "Never conducts interviews via Telegram, WhatsApp, or text-only chat apps. Official recruiter emails always end in @figma.com.",
+      "tier": "campus_confirmed",
+      "vouchCount": 118,
+      "vouchedBy": [
+        "seed-1",
+        "seed-2"
+      ],
+      "nominatedBy": "CMU Career & Professional Development",
+      "createdAt": "2026-10-10T07:34:58.528Z"
+    },
+    {
+      "id": "emp-nvidia",
+      "name": "NVIDIA",
+      "industry": "Semiconductors & AI Computing",
+      "headquarters": "Santa Clara, CA",
+      "officialDomains": [
+        "nvidia.com"
+      ],
+      "atsPortals": [
+        "nvidia.wd5.myworkdayjobs.com",
+        "nvidia.com/en-us/about-nvidia/careers"
+      ],
+      "hiringPolicyNote": "Official applications go strictly through Workday (myworkdayjobs.com). Never requests upfront fees or check deposits.",
+      "tier": "campus_confirmed",
+      "vouchCount": 164,
+      "vouchedBy": [
+        "seed-1",
+        "seed-2",
+        "seed-3"
+      ],
+      "nominatedBy": "Georgia Tech Co-op & Internships",
+      "createdAt": "2026-09-22T07:34:58.528Z"
+    },
+    {
+      "id": "emp-datadog",
+      "name": "Datadog",
+      "industry": "Cloud Monitoring & Security",
+      "headquarters": "New York, NY",
+      "officialDomains": [
+        "datadoghq.com"
+      ],
+      "atsPortals": [
+        "boards.greenhouse.io/datadog",
+        "careers.datadoghq.com"
+      ],
+      "hiringPolicyNote": "Note the official domain is datadoghq.com (not datadog-careers.com). Campus recruiting uses Greenhouse and Zoom.",
+      "tier": "campus_confirmed",
+      "vouchCount": 89,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "NYU Wasserman Center",
+      "createdAt": "2026-10-14T07:34:58.528Z"
+    },
+    {
+      "id": "emp-cloudflare",
+      "name": "Cloudflare",
+      "industry": "Edge Network & Security",
+      "headquarters": "San Francisco, CA",
+      "officialDomains": [
+        "cloudflare.com"
+      ],
+      "atsPortals": [
+        "boards.greenhouse.io/cloudflare",
+        "cloudflare.com/careers"
+      ],
+      "hiringPolicyNote": "Never asks candidates to purchase home-office equipment or pay for background screening.",
+      "tier": "campus_confirmed",
+      "vouchCount": 97,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "UT Austin Engineering Career Assistance",
+      "createdAt": "2026-10-17T07:34:58.528Z"
+    },
+    {
+      "id": "emp-atlassian",
+      "name": "Atlassian",
+      "industry": "Team Collaboration Software",
+      "headquarters": "Sydney & San Francisco",
+      "officialDomains": [
+        "atlassian.com"
+      ],
+      "atsPortals": [
+        "atlassian.com/company/careers",
+        "lever.co"
+      ],
+      "hiringPolicyNote": "Recruiters email exclusively from @atlassian.com and schedule HackerRank + live video technical interviews.",
+      "tier": "community_verified",
+      "vouchCount": 74,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "WaterlooWorks Student Collective",
+      "createdAt": "2026-10-22T07:34:58.528Z"
+    },
+    {
+      "id": "emp-hubspot",
+      "name": "HubSpot",
+      "industry": "CRM & Marketing Platform",
+      "headquarters": "Cambridge, MA",
+      "officialDomains": [
+        "hubspot.com"
+      ],
+      "atsPortals": [
+        "hubspot.com/careers",
+        "boards.greenhouse.io/hubspot"
+      ],
+      "hiringPolicyNote": "Co-op and summer intern outreach uses @hubspot.com. Never uses personal Gmail accounts.",
+      "tier": "community_verified",
+      "vouchCount": 63,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "Northeastern Co-op Network",
+      "createdAt": "2026-10-24T07:34:58.528Z"
+    },
+    {
+      "id": "emp-linear",
+      "name": "Linear",
+      "industry": "Product Planning & Issue Tracking",
+      "headquarters": "San Francisco, CA",
+      "officialDomains": [
+        "linear.app"
+      ],
+      "atsPortals": [
+        "linear.app/careers",
+        "jobs.ashbyhq.com/linear"
+      ],
+      "hiringPolicyNote": "Uses @linear.app and Ashby ATS. Does not post random Discord DM internship offers.",
+      "tier": "community_verified",
+      "vouchCount": 51,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "Stanford CS Student Forum",
+      "createdAt": "2026-10-30T07:34:58.528Z"
+    },
+    {
+      "id": "emp-shopify",
+      "name": "Shopify",
+      "industry": "Commerce Infrastructure",
+      "headquarters": "Ottawa, Canada",
+      "officialDomains": [
+        "shopify.com"
+      ],
+      "atsPortals": [
+        "shopify.com/careers",
+        "jobs.smartrecruiters.com/Shopify"
+      ],
+      "hiringPolicyNote": "Dev Degree and summer internship correspondence uses @shopify.com or SmartRecruiters.",
+      "tier": "campus_confirmed",
+      "vouchCount": 93,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "UWaterloo & Carleton Career Boards",
+      "createdAt": "2026-10-12T07:34:58.528Z"
+    },
+    {
+      "id": "emp-microsoft",
+      "name": "Microsoft",
+      "industry": "Cloud & Productivity Platforms",
+      "headquarters": "Redmond, WA",
+      "officialDomains": [
+        "microsoft.com"
+      ],
+      "atsPortals": [
+        "careers.microsoft.com",
+        "jobs.careers.microsoft.com"
+      ],
+      "hiringPolicyNote": "Official emails originate from @microsoft.com. Action Center handles all onboarding documents securely.",
+      "tier": "campus_confirmed",
+      "vouchCount": 215,
+      "vouchedBy": [
+        "seed-1",
+        "seed-2"
+      ],
+      "nominatedBy": "UW Career & Internship Center",
+      "createdAt": "2026-09-27T07:34:58.528Z"
+    },
+    {
+      "id": "emp-duolingo",
+      "name": "Duolingo",
+      "industry": "Language Learning Technology",
+      "headquarters": "Pittsburgh, PA",
+      "officialDomains": [
+        "duolingo.com"
+      ],
+      "atsPortals": [
+        "careers.duolingo.com",
+        "boards.greenhouse.io/duolingo"
+      ],
+      "hiringPolicyNote": "University recruiters use @duolingo.com and Greenhouse; Thrive internships include live Zoom interviews.",
+      "tier": "community_verified",
+      "vouchCount": 58,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "Pitt & CMU Student Chapter",
+      "createdAt": "2026-11-02T07:34:58.528Z"
+    },
+    {
+      "id": "emp-databricks",
+      "name": "Databricks",
+      "industry": "Data & AI Platform",
+      "headquarters": "San Francisco, CA",
+      "officialDomains": [
+        "databricks.com"
+      ],
+      "atsPortals": [
+        "databricks.com/company/careers",
+        "boards.greenhouse.io/databricks"
+      ],
+      "hiringPolicyNote": "All intern offers require live technical interviews and official DocuSign sent after @databricks.com recruiter confirmation.",
+      "tier": "campus_confirmed",
+      "vouchCount": 109,
+      "vouchedBy": [
+        "seed-1"
+      ],
+      "nominatedBy": "UC Berkeley EECS Peer Advisors",
+      "createdAt": "2026-10-20T07:34:58.528Z"
+    }
+  ]
+}

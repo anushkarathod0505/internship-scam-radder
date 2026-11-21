@@ -1,0 +1,6 @@
+{
+  "name": "InternRadar",
+  "description": "Real-time internship scam radar for students to report suspicious job postings and verify offers against a community-driven trusted employer database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
